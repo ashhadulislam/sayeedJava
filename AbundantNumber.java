@@ -43,3 +43,47 @@ class Main
           
     }
 }
+
+
+or
+
+
+
+
+    // Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Main 
+{
+    public static void main(String[] args) 
+    {
+        Scanner in =new Scanner(System.in);
+        System.out.println("Enter the number");
+        int n=in.nextInt();
+        int sum=0;
+        int numfact=0;
+        for(int i=2;i<n;i++)
+        {
+            if(n%i==0)
+          
+            {
+                System.out.println("divisor :"+i);
+                sum=sum+i;
+                System.out.println("sum "+sum);
+                numfact=numfact+1;
+                //Practice work(not necessary for abundant number program)
+                System.out.println("number of factors "+numfact);
+            }
+     
+        }
+          if(sum>n)
+          {
+              System.out.println("It is an abundant number");
+          }
+          else
+          {
+               System.out.println("It is not an abundant number");
+          }
+          
+    }
+}
