@@ -36,5 +36,44 @@ class Main {
     }
 }
 
+or
+
+
+    // Online Java Compiler
+// Use this editor to write, compile and run your Java code online
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+        Scanner in = new Scanner (System.in);
+        int n,n2;
+        float sum=0;
+        System.out.println("Enter the number:");
+        n=in.nextInt();
+        n2=n;
+        while(n>0)
+        {
+            float pdt=1;
+            int ld=n%10;
+            n=n/10;
+            for(int i=1;i<=ld;i++)
+            {
+                pdt=pdt*i;
+            }
+            System.out.println("Pdt : " +pdt);   
+            sum=sum+pdt;
+            System.out.println("Sum :" +sum);
+            System.out.println("**************");
+        }
+         if(sum==n2)
+            {
+                System.out.println(n2+ " is a special number");
+            }
+        else
+            {
+                System.out.println(n2+ " is not a special number");
+            }
+    }
+}
+
 
 
